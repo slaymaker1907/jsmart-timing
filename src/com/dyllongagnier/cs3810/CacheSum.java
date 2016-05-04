@@ -3,7 +3,7 @@ package com.dyllongagnier.cs3810;
 import java.time.Duration;
 
 import com.dyllongagnier.cs4150.timing.CodeTimer;
-import com.dyllongagnier.cs4150.timing.FixedSampleSize;
+import com.dyllongagnier.cs4150.timing.MinTimer;
 
 /**
  * This is the main function to compare cache aware algorithms.
@@ -20,7 +20,7 @@ public class CacheSum
 	{
 		// Create data to be used throughout.
 		RandomArrayGenerator rand = new RandomArrayGenerator();
-		CodeTimer timer = new FixedSampleSize(3);
+		CodeTimer timer = new MinTimer(10);
 		int bigSize = 8192;
 		int smallSize = 100;
 		
